@@ -1,0 +1,254 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 24;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background-image: linear-gradient(to bottom right, rgb(31, 31, 31), rgb(19, 76, 117), rgb(19, 117, 105));
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family:  sans-serif;
+}
+
+#header .profile h1 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("pict/pic1.jpg") top center;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(3, 13, 20, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* typewrite */
+
+.typewriter {
+	display: inline-block;
+  font-family: serif;
+}
+
+.typewriter-text {
+    color: rgb(82, 177, 194);
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+   	animation: typing 2s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 60px;
+    font-weight: 700;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: rgb(82, 177, 194);
+    }
+}
+
+
+.headup {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+#menuku{
+  margin: 60px auto;
+  padding-left: 180px;
+}
+
+
+#footer{
+  background-color: rgb(32, 35, 42);
+  width: auto;
+  padding: 25px;
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ttg{
+  text-align: justify;
+}
+
+#linkniomic{
+  text-decoration: none;
+  color: rgb(46, 130, 177);
+}
+
+#transisi{
+  transition: all ease-in-out 0.5s;
+  transition: all 0.5s;
+}
+
+#under:after{
+    height: 8px;
+    width: 10%;
+    left: 0;
+    bottom: 0;
+    background: rgb(32, 35, 42);
+    display: block;
+    border-radius: 8px;
+    content: "";
+    margin-top: 5px;
+}
